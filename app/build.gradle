@@ -8,9 +8,13 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileOptions {
-        sourceCompatibility 1.8
-        targetCompatibility 1.8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
     compileSdkVersion 33
     buildToolsVersion "33.0.0"
     defaultConfig {
